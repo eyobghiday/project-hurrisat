@@ -1,0 +1,145 @@
+
+%do not modify
+%
+%
+%
+%
+
+\documentclass{report}
+\pdfinfo{
+    /Author (Eyob Ghebreiesus)
+   /Title  (Project HurriSat Final)
+   /CreationDate (D:20220215190000)
+   /ModDate (\date{today})
+   /Subject (Spacecraft Design)
+   /Keywords (Spacecraft, HurriSat, Aerospace)
+}
+\usepackage{placeins}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage[x11names]{xcolor}
+\definecolor{navyblue}{HTML}{002147}
+\hypersetup{%
+   colorlinks   = true, %Colours links instead of ugly boxes
+   urlcolor     = black, %Colour for external hyperlinks
+%   linkcolor    = blue, %Colour of internal links
+%   citecolor   = red %Colour of citations
+}
+%\input{cover.tex}
+\newcommand{\HRule}{\rule{\linewidth}{0.4mm}}
+\usepackage{wrapfig}
+\usepackage{lmodern}
+% \usepackage{framed}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+% \usepackage[style=ieee]{biblatex}
+% \addbibresource{bibtex.bib}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibtex.bib}
+\usepackage{tabularx}
+\usepackage{indentfirst}
+\usetikzlibrary{shapes, arrows}
+\begin{document}
+\pagenumbering{roman}
+\pagenumbering{gobble}
+\setlogo{Logo.png}
+\setyear{MMAE-412, 2022}
+\begin{center}
+\textbf{\color{white}TOP SECRET}\\[.2in]
+%\vspace{0.25mm} \\
+%\textbf{\color{black}{MMAE-412 SPACECRAFT DESIGN}}\\
+% \large\textbf{\href{https://github.com/eyobghiday/project-hurrisat}{Project HurriSat}}\\[.7in]
+%\textbf{\small\href{https://github.com/eyobghiday/project-hurrisat}{PROJECT HURRISAT}}
+\Large\textsc{\href{https://github.com/eyobghiday/project-hurrisat}{PROJECT HURRISAT}}
+\HRule
+\vspace{2.2cm}
+\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=9cm]{Images/iit_logo.png}\\[.3in]
+%\HRule
+% \caption*{\small{$^1$Eyob Ghebreiesus}}
+\end{figure}
+\begin{center}
+\begin{center}
+  \large{ILLINOIS INSTITUTE OF TECHNOLOGY}\\
+  \small{ARMOUR COLLEGE OF ENGINEERING}\\
+    \small{SPACECRAFT DESIGN REPORT}\\  
+    THE NASA CSLI INITIATIVE\\\\[.5in]
+\end{center}
+\begin{center}
+\textit{\href{https://github.com/eyobghiday/project-hurrisat}{ Project Hurrisat}}\\
+\textit{May $4^{th}$, 2022}
+\end{center}
+\end{center}
+
+\newpage
+\begin{center}
+\small\textsc{\href{https://github.com/eyobghiday/project-hurrisat}{PROJECT HURRISAT }}\noindent\rule{\textwidth}{0.4pt}
+\vspace{.5in}\\
+\large Team Structure\\[.1in]
+% \end{center}
+% \begin{left}
+\small{$^1$}\href{mailto:eghebreiesus@hawk.iit.edu}{Eyob Ghebreiesus}. \small{$^2$}\href{mailto:jmcmahon2@hawk.iit.edu}{Jake McMahon}, \small{$^3$}\href{mailto:kbachiyski@hawk.iit.edu}{Kiril Bachiyski}, \small{$^4$}\href{mailto:lpalmatier@hawk.iit.edu}{Liam Palmatier}, \small{$^5$}\href{mailto:tassefa@hawk.iit.edu}{Tewodros Assefa}
+\vspace{.2in}\\
+\small{$^1$ M.S Aerospace Engineering. Project Manager, Systems engineer for Mission analysis and operations \\
+$^2$ B.Sc Aerospace Engineering. Project Requirements, Constraints, and Risk Assessments    \\
+$^3$ B.S. Aerospace Engineering. Payload delivery design and Communication Architecture\\
+$^4$ M.S. Aerospace Engineering. Power design, Thermal design and Shielding \\
+$^5$ M.S. Aerospace. Structures, Propulsion and Thrusters design}\\[1in]
+% \end{left}
+\end{center}
+Homepage: \textit{\href{https://github.com/eyobghiday/project-hurrisat}{Project HurriSat}} \\
+Contact: \href{mailto:eghebreiesus@hawk.iit.edu}{ehgbereiesus@hawk.iit.edu}\\
+Published on \textit{May $4^{th}$, 2022}\\[.2in]
+Copyright © 2022\\
+All rights reserved. This Lab report or any portion thereof may not be reproduced or used in any manner whatsoever without the express written permission of the publisher except for the use of referencing for educational purposes.\\
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the document.\\[.2in]
+Produced via LaTeX, Inc U.S.A.\\
+MIT License for the GitHub Project, 2022\\
+\href{https://github.com/eyobghiday/project-hurrisat}{\textit{github.com/eyobghiday/project-hurrisat}}\\
+\begin{center}
+\href{https://www.iit.edu/mmae}{Department of Mechanical, Materials and Aerospace Engineering}\\
+\href{https://www.iit.edu}{ILLINOIS INSTITUTE OF TECHNOLOGY}\\
+\end{center}
+
+\newpage
+\hypersetup{hidelinks}
+% 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{\includegraphics[height=\logoheight, keepaspectratio, align=c]{\logo}}
+\fancyhead[LE,RO]{\href{https://github.com/eyobghiday/project-hurrisat}{Project Hurrisat}}
+% \fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[CE,CO]{\thepage}
+\renewcommand{\headrulewidth}{.8pt}
+\renewcommand{\footrulewidth}{.8pt}
+% 
+\begingroup
+\hypersetup{linkcolor=black}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\section{Introduction}\label{s:es}
+    \input{Sections/Introduction}
+\section{Mission Exploration}\label{s:ms}
+    \input{Sections/Mission Analysis}
+\section{Mission Design Architecture}\label{s:cda}
+    \input{Sections/Concept of Operations}
+\section{Cubesat Budget}\label{s:pd}
+    \input{Sections/budget}
+\section{Subsystem Design}\label{s:ss}
+    \input{Sections/Subsystems}
+\section{Mission Feasibility}\label{s:mf}
+    \input{Sections/Feasibility}
+
+\section{Conclusion}\label{s:tp}
+    \input{Sections/Conclusion}
+    \newpage
+\section{Appendix}\label{s:ap}
+    \input{Sections/Appendix}
+
+\addcontentsline{toc}{section}{References}
+\endgroup
+\printbibliography
+\end{document}
